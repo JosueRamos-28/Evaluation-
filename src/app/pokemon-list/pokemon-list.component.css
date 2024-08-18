@@ -1,0 +1,83 @@
+/* src/app/pokemon-list/pokemon-list.component.css */
+.pokemon-list-container {
+  position: relative;
+  background-color: #f0f0f0; /* Color de fondo claro */
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-image {
+  width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+  max-width: 600px; /* Ancho máximo de la imagen */
+  margin: 20px 0;
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+h1 {
+  color: #333; /* Color del texto */
+  font-size: 2rem; /* Tamaño del texto */
+  margin-bottom: 20px;
+}
+
+.mat-grid-list {
+  width: 100%;
+  padding: 0;
+}
+
+.mat-grid-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición para efectos de hover */
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  max-width: 150px;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05); /* Efecto de aumento en hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Efecto de sombra en hover */
+}
+
+.pokemon-image {
+  border-radius: 50%; /* Imágenes redondeadas */
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 100px;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  margin-bottom: 10px;
+}
+
+.pokemon-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Color del texto */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+

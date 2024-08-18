@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{ data.name }}</h1>
+<div mat-dialog-content>
+  <img [src]="data.image" alt="{{ data.name }}" style="width: 100%; max-width: 300px;">
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Cerrar</button>
+</div>
+

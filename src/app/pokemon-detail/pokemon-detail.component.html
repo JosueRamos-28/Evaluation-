@@ -1,0 +1,10 @@
+<!-- src/app/pokemon-detail/pokemon-detail.component.html -->
+<div *ngIf="pokemon" class="pokemon-detail-container">
+  <h2>{{ pokemon.name | titlecase }}</h2>
+  <img [src]="pokemon.image" alt="{{ pokemon.name }}" />
+  <p><strong>Height:</strong> {{ pokemon.height / 10 }} m</p> <!-- Convertir a metros -->
+  <p><strong>Weight:</strong> {{ pokemon.weight / 10 }} kg</p> <!-- Convertir a kilogramos -->
+  <p><strong>Types:</strong> {{ pokemon.types }}</p>
+</div>
+
+

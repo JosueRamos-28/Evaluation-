@@ -1,0 +1,33 @@
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegura que el cuerpo y el html ocupen toda la pantalla */
+}
+
+
+@media (max-width: 600px) {
+  .pokemon-card {
+    width: 100px;
+    padding: 15px;
+  }
+
+  .pokemon-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pokemon-name {
+    font-size: 16px;
+  }
+
+  body {
+    background-image: url('assets/images/pokemons.png'); /* Ruta a la imagen en la carpeta assets */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el body */
+    background-position: center; /* Centra la imagen en el body */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+}
